@@ -20,28 +20,28 @@
   </head>
   <body>
     <header>
-      <section class="menu">
-        <div class="container menu-flex header-padding header-border">
-          <div class="menu-flex">
+      <section class="header">
+        <div class="container header__flex header__padding">
+          <div class="header__menu">
             <div class="logo">
-              <a href="#">Web<span class="logo-menu">Studio</span></a>
+              <a href="#">Web<span class="logo--header">Studio</span></a>
             </div>
-            <nav>
-              <a class="nav-link active" href="index.html">Agencja</a>
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-              <a class="nav-link" href="#">Kontakt</a>
+            <nav class="header__nav">
+              <a class="header__nav-link nav-link--active" href="index.html">Agencja</a>
+              <a class="header__nav-link" href="portfolio.html">Portfolio</a>
+              <a class="header__nav-link" href="#">Kontakt</a>
             </nav>
           </div>
-          <div class="contacts">
-            <div class="contacts-box">
-              <a class="contacts-link" href="mailto:info@devstudio.com">
-                <svg class="contacts-icon-mail">
+          <div class="header__contacts">
+            <div class="header__contacts-flex">
+              <a class="header__contacts-link" href="mailto:info@devstudio.com">
+                <svg class="header__contacts-icon-mail">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
-              <a class="contacts-link" href="tel:+48111111111">
-                <svg class="contacts-icon-tel">
+              <a class="header__contacts-link" href="tel:+48111111111">
+                <svg class="header__contacts-icon-tel">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111
@@ -52,62 +52,62 @@
       </section>
     </header>
     <main>
-      <section class="banner">
-        <h1 class="banner-text">
+      <section class="hero">
+        <h1 class="hero__text">
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <div class="banner-button">
-          <button type="button" class="main-button" data-modal-open>Zamów usługę</button>
+        <div class="hero__button-flex">
+          <button type="button" class="hero__button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
-      <section class="section-top">
+      <section class="section__padding-top">
         <div class="container">
-          <ul class="article-list">
+          <ul class="strengths__list">
             <li>
-              <div class="article-box">
-                <svg class="article-icons">
+              <div class="strengths__box">
+                <svg class="strengths__icons">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="article-text">
+              <p class="strengths__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="article-box">
-                <svg class="article-icons">
+              <div class="strengths__box">
+                <svg class="strengths__icons">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="article-text">
+              <p class="strengths__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="article-box">
-                <svg class="article-icons">
+              <div class="strengths__box">
+                <svg class="strengths__icons">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="article-text">
+              <p class="strengths__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="article-box">
-                <svg class="article-icons">
+              <div class="strengths__box">
+                <svg class="strengths__icons">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
               <h3>LOREM IPSUM</h3>
-              <p class="article-text">
+              <p class="strengths__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -115,10 +115,10 @@
           </ul>
         </div>
       </section>
-      <section class="section-top section-bottom">
+      <section class="section__padding-top section__padding-bottom">
         <h2 class="section-header">Czym się zajmujemy</h2>
         <div class="what-we-do container">
-          <ul class="img-list">
+          <ul class="what-we-do__img-list">
             <li>
               <img
                 src="images/programming.jpg"
@@ -126,7 +126,7 @@
                 width="370"
                 height="294"
               />
-              <p class="img-list-caption">APLIKACJE KOMPUTEROWE</p>
+              <p class="what-we-do__img-caption">APLIKACJE KOMPUTEROWE</p>
             </li>
             <li>
               <img
@@ -135,7 +135,7 @@
                 width="370"
                 height="294"
               />
-              <p class="img-list-caption">APLIKACJE MOBILNE</p>
+              <p class="what-we-do__img-caption">APLIKACJE MOBILNE</p>
             </li>
             <li>
               <img
@@ -144,12 +144,12 @@
                 width="370"
                 height="294"
               />
-              <p class="img-list-caption">ROZWIĄZANIA GRAFICZNE</p>
+              <p class="what-we-do__img-caption">ROZWIĄZANIA GRAFICZNE</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-top section-bottom team-section">
+      <section class="section__padding-top section__padding-bottom team-section">
         <h2 class="section-header">Nasz zespół</h2>
         <div class="team-images container">
           <figure class="team-card">
@@ -354,7 +354,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-top section-bottom">
+      <section class="section__padding-top section__padding-bottom">
         <div class="container">
           <h2 class="section-header">Nasi klienci</h2>
           <ul class="clients-list">
@@ -420,8 +420,8 @@
       <section class="bottom">
         <div class="container footer-flex">
           <div class="footer-contacts">
-            <div class="logo footer-padding">
-              <a href="#">Web<span class="logo-footer">Studio</span></a>
+            <div class="logo footer__padding">
+              <a href="#">Web<span class="logo--footer">Studio</span></a>
             </div>
             <address class="studio-address">m. Warszawa, Aleje Jerozolimskie 21</address>
             <div class="contacts bottom-mail">
