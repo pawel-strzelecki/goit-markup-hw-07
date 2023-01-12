@@ -34,15 +34,6 @@ a:active {
   color: var(--highlight-color);
 }
 
-.highlight {
-  color: currentColor;
-}
-
-.highlight:hover,
-.highlight:focus {
-  color: var(--highlight-color);
-}
-
 .container {
   width: 1170px;
   margin: 0 auto;
