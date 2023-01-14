@@ -56,6 +56,14 @@ a:active {
   text-align: center;
 }
 
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary-color);
+}
+
 img {
   display: block;
 }
@@ -78,19 +86,6 @@ img {
   color: var(--text-bright-color);
 }
 /* /logo */
-
-/* contacts */
-.contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-secondary-color);
-  display: flex;
-  justify-content: end;
-  gap: 50px;
-}
-/* /contacts */
 
 /* header */
 .header {

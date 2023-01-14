@@ -2,7 +2,7 @@
   font-family: 'raleway', sans-serif;
   font-size: 26px;
   line-height: 1.17;
-  color: var(--highlight-color);
+  color: $brandBlueColor;
   display: inline-block;
 
   &--header {
@@ -10,6 +10,6 @@
   }
 
   &--footer {
-    $brandBlueColor: #2196f3;
+    color: $primaryBrightColor;
   }
 }
