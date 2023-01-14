@@ -1,0 +1,15 @@
+.logo {
+  font-family: 'raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--highlight-color);
+  display: inline-block;
+
+  &--header {
+    color: #000;
+  }
+
+  &--footer {
+    $brandBlueColor: #2196f3;
+  }
+}
