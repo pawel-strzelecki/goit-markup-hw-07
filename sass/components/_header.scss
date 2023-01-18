@@ -26,25 +26,25 @@
     display: flex;
     margin-left: 93px;
     gap: 46px;
-  }
 
-  &__nav-link {
-    transition: $defaultTransition;
+    &-link {
+      transition: $defaultTransition;
 
-    &--active {
-      position: relative;
-      color: $brandBlueColor;
-    }
+      &--active {
+        position: relative;
+        color: $brandBlueColor;
+      }
 
-    &--active::after {
-      content: '';
-      display: block;
-      background-color: $brandBlueColor;
-      height: 4px;
-      width: 100%;
-      position: absolute;
-      bottom: -33px;
-      border-radius: 2px;
+      &--active::after {
+        content: '';
+        display: block;
+        background-color: $brandBlueColor;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        bottom: -33px;
+        border-radius: 2px;
+      }
     }
   }
 

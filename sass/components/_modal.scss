@@ -36,16 +36,18 @@ textarea#comment::placeholder {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     transition: 500ms ease-in-out;
-  }
 
-  &__backdrop.backdrop--is-hidden & {
-    transform: translate(-50%) scale(0);
-    transition: 500ms ease-in-out;
-  }
+    .modal {
+      transform: translate(-50%) scale(1);
+      transition: 500ms ease-in-out;
+    }
 
-  &__backdrop & {
-    transform: translate(-50%) scale(1);
-    transition: 500ms ease-in-out;
+    &.backdrop--is-hidden {
+      .modal {
+        transform: translate(-50%) scale(0);
+        transition: 500ms ease-in-out;
+      }
+    }
   }
 
   &__close-button {
@@ -110,11 +112,6 @@ textarea#comment::placeholder {
     color: $brandBlueColor;
   }
 
-  &__form-field {
-    position: relative;
-    margin-bottom: 10px;
-  }
-
   &__form-input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: $defaultBorderRadius;
@@ -133,14 +130,19 @@ textarea#comment::placeholder {
     }
   }
 
-  &__form-field-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    transition: fill $defaultTransition;
+  &__form-field {
+    position: relative;
+    margin-bottom: 10px;
+
+    &-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      transition: fill $defaultTransition;
+    }
   }
 
   &__form-field:focus-within &__form-field-icon,
