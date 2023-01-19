@@ -95,41 +95,6 @@ textarea#comment::placeholder {
     letter-spacing: 0.01em;
   }
 
-  &__form-comment {
-    resize: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: $defaultBorderRadius;
-    width: 100%;
-    height: 120px;
-    outline: none;
-    transition: $defaultTransition;
-    padding: 12px 0 0 16px;
-    box-sizing: border-box;
-  }
-
-  &__form-links {
-    text-decoration: underline;
-    color: $brandBlueColor;
-  }
-
-  &__form-input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: $defaultBorderRadius;
-    width: 100%;
-    height: 40px;
-    padding: 12px 0 12px 42px;
-    box-sizing: border-box;
-    transition: $defaultTransition;
-    outline: none;
-
-    &:hover,
-    &:focus,
-    &:hover,
-    &:focus {
-      border-color: $brandBlueColor;
-    }
-  }
-
   &__form-field {
     position: relative;
     margin-bottom: 10px;
@@ -148,6 +113,39 @@ textarea#comment::placeholder {
   &__form-field:focus-within &__form-field-icon,
   &__form-field:hover &__form-field-icon {
     fill: $brandBlueColor;
+  }
+
+  &__form-links {
+    text-decoration: underline;
+    color: $brandBlueColor;
+  }
+
+  &__form-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: $defaultBorderRadius;
+    width: 100%;
+    height: 40px;
+    padding: 12px 0 12px 42px;
+    box-sizing: border-box;
+    transition: $defaultTransition;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border-color: $brandBlueColor;
+    }
+  }
+
+  &__form-comment {
+    @extend .modal__form-input;
+    resize: none;
+    height: 120px;
+    padding: 12px 0 0 16px;
+
+    &:hover,
+    &:focus {
+      border-color: $brandBlueColor;
+    }
   }
 
   &__form-checkbox {

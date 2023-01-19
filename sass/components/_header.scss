@@ -33,17 +33,17 @@
       &--active {
         position: relative;
         color: $brandBlueColor;
-      }
 
-      &--active::after {
-        content: '';
-        display: block;
-        background-color: $brandBlueColor;
-        height: 4px;
-        width: 100%;
-        position: absolute;
-        bottom: -33px;
-        border-radius: 2px;
+        &::after {
+          content: '';
+          display: block;
+          background-color: $brandBlueColor;
+          height: 4px;
+          width: 100%;
+          position: absolute;
+          bottom: -33px;
+          border-radius: 2px;
+        }
       }
     }
   }
